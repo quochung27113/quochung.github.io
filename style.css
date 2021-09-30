@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+}
+
+.backbutton {
+    text-decoration: none;
+    background-color:mediumpurple;
+    color:#fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.backbutton:hover {
+    background-color:orchid;
+    cursor: pointer;
+}
+img {
+    max-width: 500px;
+}
+.abc {
+    max-width: 300px;
+}
