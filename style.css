@@ -19,3 +19,10 @@ img {
 .abc {
     max-width: 300px;
 }
+.money {
+    color:red;
+    font-weight: bold;
+}
+.msp {
+    font-weight: bold;
+}
