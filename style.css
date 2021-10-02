@@ -38,13 +38,11 @@ img {
 
 .parent-menu.desktop {
     flex: initial;
-    height:50px;
     box-sizing: border-box;
     background-color: #1373e9;
 
     width: 100%;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding: 3px;
 
     font-family: Roboto,sans-serif;
     font-size: 16px;
