@@ -1,0 +1,121 @@
+a {
+    text-decoration: none;
+}
+
+.backbutton {
+    text-decoration: none;
+    background-color:mediumpurple;
+    color:#fff;
+    padding: 7px 10px;
+    border-radius: 10px;
+}
+.backbutton:hover {
+    background-color:orchid;
+    cursor: pointer;
+}
+img {
+    max-width: 500px;
+}
+.abc {
+    max-width: 300px;
+}
+.money {
+    color:red;
+    font-weight: bold;
+}
+.msp {
+    font-weight: bold;
+}
+.menu {
+    background-color:royalblue;
+    padding: 20px 30px;
+    color:white
+}
+
+.parent-menu a {
+    color: #fff;
+}
+
+.parent-menu.desktop {
+    flex: initial;
+    box-sizing: border-box;
+    background-color: #1373e9;
+
+    width: 100%;
+    padding: 3px;
+
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+}
+.list-menu {
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+
+}
+.parent-menu-item {
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.1rem;
+    position: relative;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+a:hover {
+    color:rgb(204, 165, 165);
+}
+.nav-padding {
+    padding: 0 15px;
+}
+.container-fluid {
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box
+}
+.container {
+    max-width: 1250px;
+}
+.footer {
+    font-size: 14px;
+    line-height: 2.5em;
+    padding: 1rem 0;
+    box-sizing: border-box;
+}
+footer, footer a {
+    color: #919294;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    box-sizing: border-box;
+}
+.cot1 {
+    position: relative;
+    width: 100%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+h4 {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
