@@ -76,3 +76,6 @@
     background-color: seagreen;
     transition: .5s ease;
 }
+img {
+    max-width: 100%;
+}

@@ -45,57 +45,37 @@
     color: #fff;
     text-decoration: none;
 }
+
 .header-container .parent-menu-item a:hover {
     color:rgb(24, 173, 158);
     font-weight: bold;
 }
-.picture-container {
+.btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: royalblue;
+    border-radius: 4px;
+    padding: 4px 50px;
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: #e2e2e2;
-}
-.picture-container img {
-    max-width: 100%;
-}
-.block {
-    width: calc((100% - 30px) / 3);
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position:relative;
-    height: 230px;
-    overflow: hidden
-}
-.effect {
-    opacity: 1;
-    display: block;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    letter-spacing: 5px;
+    font-family: system-ui;
     transition: .5s ease;
-    backface-visibility: hidden;
-}
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    max-width: 100%;
-}
-.text {
-    color: black;
-    font-size: 16px;
-    padding: 16px 32px;
-}
-.block:hover .middle {
-    opacity: 1;
-}
-.block:hover img {
-    opacity: 0.3;
-}
-.block a {
+} 
+.btn a {
     text-decoration: none;
-    color:black;
+    color:white;
+}
+.btn:hover {
+    border-radius: 30px;
+    background-color: seagreen;
+    transition: .5s ease;
+}
+img {
+    max-width: 100%;
 }

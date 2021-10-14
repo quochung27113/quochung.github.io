@@ -1,0 +1,66 @@
+body {
+    font-family: Roboto-Regular,'Helvetica Neue',Helvetica,Tahoma,Arial,Sans-serif;
+}
+.container {
+    background-color: rgb(29, 174, 179);
+}
+.main-menu {
+    box-sizing: border-box;
+    list-style: none;
+    width: 200px;
+    background-color:white;
+    padding: 12px 0 12px 0px;
+    position: relative;
+    left: 80px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
+}
+a {
+    text-decoration: none;
+    padding: 6px 0 6px 8px;
+    display: block;
+    font-size: 12.5px;
+    color: #757575;
+    cursor: pointer;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 200px;
+    width: 200px;
+    height: 154px;
+    list-style: none;
+    background-color:white;
+    padding: 12px 0 12px 0px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgb(0 0 0 / 7%);
+    z-index: 999;
+}
+.main-menu > li a:hover {
+    background-color:#eceff1;
+    color: #f36d00;
+}
+.main-menu > li:hover .sub-menu {
+    display: block;
+    /* transition: 5s; */
+}
+.sub-menu > li:hover .main-menu {
+    background-color:#eceff1;
+    color: #f36d00;
+}
+a:hover::after {
+    margin-right: 8px;
+    color: #f36d00;
+    font-size: 15px;
+    float: right;
+    content:'\f054';
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    font-weight: 900;
+}
+
+
+
