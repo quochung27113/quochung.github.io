@@ -105,9 +105,9 @@
 }
 a:hover {
     background-color:forestgreen;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 .input:hover {
     border-radius: 5px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
