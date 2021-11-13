@@ -47,10 +47,6 @@ a {
     display: block;
     /* transition: 5s; */
 }
-.sub-menu > li:hover .main-menu {
-    background-color:#eceff1;
-    color: #f36d00;
-}
 a:hover::after {
     margin-right: 8px;
     color: #f36d00;
@@ -61,6 +57,9 @@ a:hover::after {
     display: inline-block;
     font-weight: 900;
 }
-
+/* .sub-menu > li:hover .main-menu>li {
+    background-color:#eceff1;
+    color: #f36d00;
+} */
 
 
