@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="style/style-login.css">
 </head>
 <body>
@@ -20,8 +23,27 @@
                     <input class="input" type="password" name="pass" placeholder="Password">
                     <span class="focus-input"></span>
                 </div>
-                
-                <a class="container-login-form-btn login-form-btn" href="./register.html">Sign in</a>
+                <div class="remember">
+                    
+                    <label for="remember"><input type="checkbox" id="remember" name="remember"> Remember me</label>
+                    <a href="#" class="forgot">Forgot Username / Password?</a>
+                </div>
+                <a class="login-form-btn" href="./register.html">Login</a>
+                <div class="login-others-text"><span>Or sign up with</span></div>
+                <div class = "login-others-symbols">
+                    <a href="#" class="login-social-item btn1">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+
+                    <a href="#" class="login-social-item btn2">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+
+                    <a href="#" class="login-social-item btn3">
+                        <i class="fa fa-google"></i>
+                    </a>
+                </div>
+                <div class="login-signup"><span>Not a member? <a class="login-signup-text" href="register.html">Register now</a></span></div>
                     
             </form> 
         </div>
