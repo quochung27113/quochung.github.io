@@ -16,51 +16,63 @@
     <div class="container-login">
 
         <div class="wrap-login">
-            <form class="login-form" action="result.html">
+            <form class="login-form" action="result.html" method="post">
                 <span class="login-form-title">Sign Up</span>
                 <div class="wrap-input">
                     <input class="input" type="text" id="fullname" name="fullname" placeholder="Full name . . . ">
-                    <span class="focus-input"></span>
+
+                    <span id="fullname_error" class="error"></span>
                 </div>
 
                 <div class="wrap-input">
-                    <input class="input" type="text" id="email" name="email" placeholder="Email@gmai.com . . .">
-                    <span class="focus-input"></span>
+                    <input class="input" type="text" id="email" name="email" placeholder="email@gmai.com . . .">
+
+                    <span id="email_error" class="error"></span>
                 </div>
-                <span id="email_error"></span>
+
 
                 <div class="wrap-input">
                     <input class="input" type="text" id="phone" name="phone" placeholder="Phone number . . . ">
-                    <span class="focus-input"></span>
+
+                    <span id="phone_error" class="error"></span>
                 </div>
-                <span id="phone_error"></span>
+
 
                 <div class="wrap-input">
                     <input class="input" type="text" id="username" name="username" placeholder="Username . . . ">
-                    <span class="focus-input"></span>
+
+                    <span id="username_error" class="error"></span>
                 </div>
-                <span id="username_error"></span>
+
 
                 <div class="wrap-input">
-                    <input class="input" type="text" id="password" name="pass" placeholder="Password . . . ">
-                    <span class="focus-input"></span>
+                    <input class="input" type="password" id="password" name="pass" placeholder="Password . . . ">
+                    <span id="password_error" class="error"></span>
                 </div>
-                <span id="password_error"></span>
+
+
+                <div id="btn-show-pass" onclick="showPass()">
+                    <i class="fa fa-eye-slash" aria-hidden="true"></i>
+                </div>
 
                 <div class="wrap-input">
-                    <input class="input" type="text" id="confirmpass" name="confirmpass"
+                    <input class="input" type="password" id="confirmpass" name="confirmpass"
                         placeholder="Confirm Password . . . ">
-                    <span class="focus-input"></span>
+                    <span id="confirmpass_error" class="error"></span>
                 </div>
+
 
                 <div class="remember">
                     <label for="remember"><input type="checkbox" id="remember" name="remember"> I argree to the </label>
                     <a href="#" class="forgot">Terms of Users</a>
                 </div>
-                <div class="wrap-input">
+
+                <!-- <div class="wrap-input">
                     <input class="input register" type="submit" value="Register" onclick="return validate()">
-                </div>
-                <!-- <a class="login-form-btn" href="./register.html">register</a> -->
+                </div> -->
+
+                <button class="login-form-btn" type="button" onclick="validate()">Register</button>
+
                 <div class="login-others-text"><span>Or sign up with</span></div>
                 <div class="login-others-symbols">
                     <a href="#" class="login-social-item btn1">
@@ -90,55 +102,90 @@
         }
         function validate() {
             let flag = true;
+            let fullname = getValue('fullname');
+            showError('fullname', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
+
             let username = getValue('username');
             if (username == "") {
                 flag = false;
-                showError('username', 'Chưa nhập Username');
+                showError('username', 'Username is required <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
             }
             else if (username.length < 6 || username.length > 32) {
                 flag = false;
-                showError('username', 'Username phải lớn hơn 6 ký tự');
+                showError('username', 'Username must be more than 6 characters <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
             }
             // else if (!/^[A-Za-z0-9]$/.test(username)) {
             //     flag = false;
             //     showError('username', 'Username không đúng định dạng');
             // }
             else {
-                showError('username', "");
+                showError('username', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
+
             }
             let password = getValue('password');
-            let confirmpass = getValue('confirmpass');
             if (password == "") {
                 flag = false;
-                showError('password', 'Vui lòng kiểm tra lại Password');
+                showError('password', 'Password is required <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
             } else if (password.length < 6 || password.length > 32) {
                 flag = false;
-                showError('password', 'Mật khẩu không đủ dài');
-            } else if (password != confirmpass) {
-                flag = false;
-                showError('password', 'Nhập lại mật khẩu sai');
+                showError('password', 'Password Must Be 8-32 Characters <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
+                // } else if (password != confirmpass) {
+                //     flag = false;
+                //     showError('password', 'Nhập lại mật khẩu sai');
             } else {
-                showError('password', "");
+                console.log("chạy qua");
+                showError('password', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
+            }
+
+            let confirmpass = getValue('confirmpass');
+            if (confirmpass == "") {
+                flag = false;
+                showError('confirmpass', 'Confirm is required <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
+            } else if (confirmpass != password) {
+                flag = false;
+                showError('confirmpass', 'Invalid confirm password <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
+            } else {
+                showError('confirmpass', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
 
             let phone = getValue('phone');
             if (phone != "" && !/^[0-9]{10}$/.test(phone)) {
                 flag = false;
-                showError('phone', 'Nhập sai số điện thoại');
+                showError('phone', 'Phone number input upto 10 digit numbers <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
             } else {
-                showError('phone', "");
+                showError('phone', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
 
             let email = getValue('email');
             let mailformat = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
             if (!mailformat.test(email)) {
                 flag = false;
-                showError('email', 'Nhập sai email');
+                showError('email', 'Invalid Email Format <i class="fa fa-exclamation-circle" aria-hidden="true"></i>');
             } else {
-                showError('email', "");
+                showError('email', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
             return flag
         }
+        let pwShow = 0;
+        function showPass() {
+            if (pwShow == 0) {
+                pwShow = 1;
+                document.getElementById("btn-show-pass").innerHTML = '<i class="fa fa-eye" aria-hidden="true"></i>';
+                document.getElementById("password").type = "text";
+                document.getElementById("confirmpass").type = "text";
+                console.log("hiện", pwShow)
+            } else {
+                pwShow = 0;
+                document.getElementById("btn-show-pass").innerHTML = '<i class="fa fa-eye-slash" aria-hidden="true"></i>';
+                document.getElementById("password").type = "password";
+                document.getElementById("confirmpass").type = "password";
+                console.log("ẩn", pwShow);
+            }
+
+        }
+        
+
     </script>
 </body>
 
