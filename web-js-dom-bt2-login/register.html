@@ -65,6 +65,7 @@
                 <div class="remember">
                     <label for="remember"><input type="checkbox" id="remember" name="remember"> I argree to the </label>
                     <a href="#" class="forgot">Terms of Users</a>
+                    <span id="remember_error" class="error-checkbox"></span>
                 </div>
 
                 <!-- <div class="wrap-input">
@@ -165,31 +166,25 @@
             } else {
                 showError('email', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
-            return flag 
-          
+
+
+            let checkbox = document.getElementsByName('remember')[0].checked;
+            console.log(checkbox);
+            if (checkbox == false) {
+                flag = false;
+                document.getElementsByClassName("forgot")[0].innerHTML = '<a href="#" class="forgot1">Terms of Users*</a>'
+            } else {
+                document.getElementsByClassName("forgot1")[0].innerHTML = '<a href="#" class="forgot">Terms of Users</a>'
+                return flag;
+            }
         }
-        
-        function success() { 
+
+        function success() {
             if (validate() == true) {
                 console.log("thành công");
-                document.getElementsByClassName("login-form")[0].innerHTML='<form class="login-form"><span class="login-form-title">Success</span><button class="login-form-btn" type="button">Success</button></form>';
-
+                document.getElementsByClassName("login-form")[0].innerHTML = '<form class="login-form"><span class="login-form-title">SUCCESS</span><div class="success"><span >Congratulations, your account has been successfully created</span></div><button class="login-form-btn-continue" type="button">Continue</button></form>';
             } else (console.log("chưa thành công"));
         }
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         let pwShow = 0;
         function showPass() {
@@ -206,9 +201,7 @@
                 document.getElementById("confirmpass").type = "password";
                 console.log("ẩn", pwShow);
             }
-
         }
-
 
     </script>
 </body>

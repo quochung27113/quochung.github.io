@@ -1,25 +1,22 @@
 /*//////////////////////////////////////////////////////////////////
 [ FONT ]*/
-
 @font-face {
   font-family: Poppins-Regular;
   src: url("../fonts/poppins/Poppins-Regular.ttf");
 }
-
 @font-face {
   font-family: Poppins-Medium;
   src: url("../fonts/poppins/Poppins-Medium.ttf");
 }
-
 @font-face {
   font-family: Poppins-Bold;
   src: url("../fonts/poppins/Poppins-Bold.ttf");
 }
-
 @font-face {
   font-family: Poppins-SemiBold;
   src: url("../fonts/poppins/Poppins-SemiBold.ttf");
 }
+
 
 /*//////////////////////////////////////////////////////////////////
 [ RESTYLE TAG ]*/
@@ -47,6 +44,7 @@ a {
   margin: 70px auto;
   position: relative;
 }
+
 
 /*------------------------------------------------------------------
 [ Form ]*/
@@ -85,6 +83,7 @@ a {
   padding-top: 50px;
   padding-bottom: 39px;
 }
+
 
 /*------------------------------------------------------------------
 [ Input ]*/
@@ -155,6 +154,8 @@ a.forgot:hover {
   );
   border-radius: 5px;
 }
+
+
 /*------------------------------------------------------------------
 [ Button ]*/
 .login-form-btn {
@@ -182,7 +183,11 @@ a.forgot:hover {
   border: none;
 }
 button.login-form-btn:hover {
-  background: linear-gradient(45deg, rgba(90,210,195,1) 0%, rgba(88,196,181,1) 100%);
+  background: linear-gradient(
+    45deg,
+    rgba(90, 210, 195, 1) 0%,
+    rgba(88, 196, 181, 1) 100%
+  );
   border-radius: 5px;
   cursor: pointer;
 }
@@ -228,9 +233,6 @@ a.btn1:hover {
 .btn3:hover {
   background-color: #ea4335;
 }
-/* a.login-social-item:hover{
-  background-color: rgba(54, 46, 46, 0.75);
-} */
 
 /*---------------------------------------------*/
 .login-signup {
@@ -247,7 +249,56 @@ a.login-signup-text:hover {
   text-decoration: underline;
 }
 
-/*---------------------------------------------*/
+
+/*---------------------------------------------*
+[success button]*/
+.success {
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.74);
+  line-height: 1.8;
+  width: 390px;
+  text-align: center;
+}
+.login-form-btn-continue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  background: linear-gradient(
+    45deg,
+    rgba(124, 241, 153, 1) 34%,
+    rgba(124, 247, 229, 1) 100%
+  );
+  border-radius: 25px;
+  text-decoration: none;
+  font-family: Poppins-Medium;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.74);
+  line-height: 1.2;
+  transition: all 1s;
+  border: none;
+}
+button.login-form-btn-continue:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(90, 210, 195, 1) 0%,
+    rgba(88, 196, 181, 1) 100%
+  );
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/*---------------------------------------------
+[css for js]*/
 .error {
   color: #c80000;
   position: absolute;
@@ -255,11 +306,22 @@ a.login-signup-text:hover {
   font-weight: 600;
   line-height: 1.4;
 }
+.error-checkbox {
+  color: #c80000;
+  position: absolute;
+  right: 7%;
+  font-weight: 600;
+  line-height: 1.4;
+  font-size: 16px;
+}
 
 #btn-show-pass {
   font-size: 18px;
   position: absolute;
   right: 14%;
   top: 535px;
-  color: #bd06dd;
+  color: #8d04a5;
+}
+a.forgot1 {
+  color: #c80000;
 }
