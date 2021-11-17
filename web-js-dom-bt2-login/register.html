@@ -71,7 +71,7 @@
                     <input class="input register" type="submit" value="Register" onclick="return validate()">
                 </div> -->
 
-                <button class="login-form-btn" type="button" onclick="validate()">Register</button>
+                <button class="login-form-btn" type="button" onclick="success()">Register</button>
 
                 <div class="login-others-text"><span>Or sign up with</span></div>
                 <div class="login-others-symbols">
@@ -133,7 +133,7 @@
                 //     flag = false;
                 //     showError('password', 'Nhập lại mật khẩu sai');
             } else {
-                console.log("chạy qua");
+
                 showError('password', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
 
@@ -165,8 +165,32 @@
             } else {
                 showError('email', '<i style="color:green" class="fa fa-check-circle" aria-hidden="true"></i>');
             }
-            return flag
+            return flag 
+          
         }
+        
+        function success() { 
+            if (validate() == true) {
+                console.log("thành công");
+                document.getElementsByClassName("login-form")[0].innerHTML='<form class="login-form"><span class="login-form-title">Success</span><button class="login-form-btn" type="button">Success</button></form>';
+
+            } else (console.log("chưa thành công"));
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         let pwShow = 0;
         function showPass() {
             if (pwShow == 0) {
@@ -184,7 +208,7 @@
             }
 
         }
-        
+
 
     </script>
 </body>
