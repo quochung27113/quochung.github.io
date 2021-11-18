@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="wrap-calculator">
+            <div class="wrap-input">
+                <input id="height" type="text" name="height" placeholder="Chiều cao (cm)">
+                <input id="weight" type="text" name="weight1" placeholder="Cân nặng (kg)">
+                <button type="button" onclick="bmiCal()">Calculate</button>
+            </div>
+            <span>Chỉ số BMI của bạn:</span>
+            <div class="display">
+                <div id="result" class="box">Thiếu cân</div>
+                <span id="result_error"></span>
+                <div id="result2" class="box">Bình thường</div>
+                <span id="result2_error"></span>
+                <div id="result3" class="box">Thừa cân</div>
+                <div id="result4" class="box">Tiền béo phì</div>
+                <div id="result5" class="box">Béo phì</div>
+            </div>
+        </form>
+           
+        <script>
+            function getValue(id) {
+            return document.getElementById(id).value.trim();
+        }
+
+            function bmiCal() {
+                ketQua = 0;
+                ketQua = getValue("weight") / (getValue("height"))*2;
+                console.log(ketQua);
+        }
+            
+        </script>    
+    </div>
+</body>
+</html>
