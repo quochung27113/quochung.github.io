@@ -60,6 +60,9 @@ input.equal {
 td:active {
     box-shadow: none;;
 }
+input:not(#display, #result):hover {
+    cursor: pointer;
+}
 td#clear {
     background-color: #f8aa18db;
 }
