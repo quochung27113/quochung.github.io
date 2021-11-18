@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    background-color: rgba(205, 207, 207, 0.836);
+}
+form {
+  width: 300px;
+  height: 600px;
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(77, 69, 69, 0.719);
+  margin: 0 auto;
+  box-shadow: 6px 2px 5px 1px #2621219e;
+}
+form table {
+  /* width: 100%; */
+  /* border-collapse: collapse; */
+  border-spacing: 7px;
+}
+/* form table tr, */
+form table td {
+    background-color:rgb(14 10 16 / 75%);
+    height:50px;
+    width: 70px;
+  border-radius: 25px;
+}
+td {
+    box-shadow: 2px 2px 2px 2px #2621219e;
+}
+td#wrap-display{
+    height:200px;
+    width: 70px;
+    background-color:rgba(0, 0, 0, 0);
+    box-shadow:none;
+}
+input {
+    height:100%;
+    width: 100%;
+  display: block;
+  border: 0;
+  font-size: 17px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffffd2;
+}
+input#display {
+    color:rgb(202, 189, 189);
+    text-align: right;
+    height:70%;
+}
+input#result {
+    text-align: right;
+    font-size: 40px;
+    padding-left: 19px;
+    height:70%;
+}
+td:active {
+    box-shadow: none;;
+}
+td#clear {
+    background-color: #f8aa18db;
+}
+td.operator{
+    background-color:#a3792d;
+}
+td.operator2{
+    background-color:rgb(62, 21, 100);
+}
+td.operator3{
+    background-color:#8400ff94;
+}
+td.operator4{
+    background-color:#140909e6;
+}
+
