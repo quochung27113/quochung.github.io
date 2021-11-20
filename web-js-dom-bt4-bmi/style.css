@@ -1,65 +1,110 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 body {
-    margin: 0;
-    background-color: grey;
+  margin: 0;
+  background-color: grey;
 }
 
 .wrap-calculator {
-    width: 100%;
-    max-width: 500px;
-   margin: 150px auto;
-   height: 500px;
-    background-color: white;
-    padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  margin: 150px auto;
+  height: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
 }
 .wrap-input {
-    display: flex;
-    max-width: 60%;
-    height: 30%;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-between;
+  display: flex;
+  max-width: 60%;
+  height: 30%;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 input {
-    padding: 10px;
-    border-radius: 5px;
+  padding: 10px;
+  border-radius: 5px;
 }
-button{
-    padding: 8px;
-    width: 100px;
-    border-radius: 5px;
-    background-color: rgb(75, 0, 250);
-    color:rgb(192, 187, 187);
+button {
+  padding: 8px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: rgb(75, 0, 250);
+  color: rgb(192, 187, 187);
 }
 .display {
-    margin-top: 50px;
-    width: 100%;
-    height: 230px;
-    border-radius: 5px;
-    border: 1px solid green;
-    display:flex;
-    position: relative;
+  margin-top: 30px;
+  width: 100%;
+  height: 230px;
+  border-radius: 5px;
+  border: 1px solid green;
+  display: flex;
+  position: relative;
 }
-.box{
-    height:80px;
-    width: 100%;
-    text-align: center;
+.box {
+  height: 80px;
+  width: 100%;
+  text-align: center;
 }
-#result{
-    background-color: rgb(10, 70, 10);
+#result {
+  background-color: rgb(10, 70, 10);
 }
-#result2{
-    background-color: green;
+#result2 {
+  background-color: green;
 }
-#result3{
-    background-color: rgb(195, 207, 21);
+#result3 {
+  background-color: rgb(195, 207, 21);
 }
-#result4{
-    background-color: rgb(219, 93, 9);
+#result4 {
+  background-color: rgb(219, 93, 9);
 }
-#result5{
-    background-color: rgb(226, 35, 35);
+#result5 {
+  background-color: rgb(226, 35, 35);
+}
+.clear {
+  position: absolute;
+  top: 48%;
+  height: fit-content;
+  width: fit-content;
+  padding: 6px;
+  text-align: justify;
+}
+#sort1 {
+  position: absolute;
+  font-size: xx-large;
+  top: 80px;
+  left: calc(10% - 10px);
+  display: none;
+}
+#sort2 {
+  position: absolute;
+  font-size: xx-large;
+  top: 80px;
+  left: calc(30% - 10px);
+  display: none;
+}
+#sort3 {
+  position: absolute;
+  font-size: xx-large;
+  top: 80px;
+  left: calc(50% - 10px);
+  display: none;
+}
+#sort4 {
+  position: absolute;
+  font-size: xx-large;
+  top: 80px;
+  left: calc(70% - 10px);
+  display: none;
+}
+#sort5 {
+  position: absolute;
+  font-size: xx-large;
+  top: 80px;
+  left: calc(90% - 10px);
+  display: none;
 }
