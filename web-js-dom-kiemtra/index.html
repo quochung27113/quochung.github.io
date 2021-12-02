@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <h2>Modal style 1</h2>
+
+    <!-- Nút Để  Mở Modal -->
+    <button id="myBtn">Launch Modal 1 </button>
+
+    <!-- Modal Cho Website -->
+    <div id="myModal" class="modal">
+
+        <!-- Nội Dung Modal -->
+        <div class="modal-content">
+
+            <div>
+                <span class="modal-heading">Modal style 1</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <p> Hãy click ra ngoài hoặc nút close để đóng Modal.</p>
+            <div class="btn-wrap">
+                <button type="button" class="close2">Close</button>
+                <button type="button" class="ok">Understood</button>
+            </div>
+        </div>
+    </div>
+
+    <h2>Modal style 2</h2>
+    <button id="myBtn2">Launch Modal 2 </button>
+    <div id="myModal2" class="modal">
+        <div class="modal-content2">
+
+            <div>
+                <span class="modal-heading">Modal style 2</span>
+                <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            </div>
+            <p> Hãy ấn nút close để đóng Modal</p>
+            <div class="btn-wrap">
+                <button type="button" class="close2">Close</button>
+                <button type="button" class="ok">Understood</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        let modal = document.getElementById("myModal");
+        let btn = document.getElementById("myBtn");
+        let span = document.getElementsByClassName("close")[0];
+        let span2 = document.getElementsByClassName("close2")[0];
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+        span2.onclick = function () {
+            modal.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                console.log(event.target);
+            }
+        }
+
+
+        let modal2 = document.getElementById("myModal2");
+        let btn2 = document.getElementById("myBtn2");
+        let span3 = document.getElementsByClassName("close")[1];
+        let span4 = document.getElementsByClassName("close2")[1];
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+
+        }
+        span3.onclick = function () {
+            modal2.style.display = "none";
+        }
+        span4.onclick = function () {
+            modal2.style.display = "none";
+        }
+        // window.onclick = function (event) {
+        //     if (event.target == modal2) {
+        //         modal2.style.display = "none";
+        //     }
+        // }
+    </script>
+</body>
+
+</html>
