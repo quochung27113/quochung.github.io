@@ -1,14 +1,14 @@
 @font-face {
     font-family: 'incon';
-    src: url('../fonts/Inconsolata/Inconsolata-Regular.ttf');
+    src: url('./fonts/Inconsolata/Inconsolata-Regular.ttf');
 }
 @font-face {
     font-family: 'play';
-    src: url('../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
+    src: url('./fonts/Playfair_Display/PlayfairDisplay-Regular.ttf');
 }
 @font-face {
     font-family:'ubuntu' ;
-    src: url('../fonts/Ubuntu/Ubuntu-Light.ttf');
+    src: url('./fonts/Ubuntu/Ubuntu-Light.ttf');
 }
 
 /* .container {

@@ -1,0 +1,106 @@
+:root {
+  --color-text--: #EB5B49;;
+  --color-text1--: #283583;
+  --color-text2--: #818182;
+}
+
+/* heading */
+.navbar-heading .nav .nav-item {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 14px;
+line-height: 20px;
+  padding-right: 48px;
+}
+.nav-item a {
+  color: black;
+}
+.middle-text {
+    font-family: "sfdisplay" ;
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--color-text--);
+}
+.heading{
+  background-image: url("../img/background1.png");
+  max-width: 100%;
+}
+button{
+    background-color: var(--color-text--);
+    width: 134px;
+    height:30px;
+    border-radius: 15px;
+    border: none;
+}
+.nav-btn a{
+    color: white;
+    font-family: "lato";
+    font-weight: 400;
+}
+.header-textbox {
+    max-width: 550px;
+    margin: auto;
+    font-family: "lato";
+    font-weight: 700;
+    font-size: 82px;
+    color: var(--color-text1--);
+    line-height: 80px;
+}
+
+.header-textbox2 {
+    max-width: 550px;
+    margin: auto;
+    font-family: "lato";
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--color-text2--);
+    line-height: 35px;
+    margin-top: 75px;
+}
+.header-scrolldown {
+    color: black;
+    font-family: "lato";
+    font-weight: 400px;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 75px;
+}
+.header-scrolldown .chevron {
+    width: 31px;
+    height: 16px;
+    margin-top: 20px;
+}
+/* content */
+.content {
+    background-image: url("../img/background2.png");
+    margin-top: 300px;
+    position: relative;
+}
+.content .image1{
+    position:absolute;
+    top: -218px;
+    
+}
+.content-about-textbox {
+    color: var(--color-text2--);
+    font-family: "lato";
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 35px;
+    padding-top:215px;
+    max-width: 1139px;
+}
+.content-about-btn {
+    width: 240px;
+    height: 32px;
+    background-color: var(--color-text1--);
+}
+.content-about-btn a{
+    color: white;
+    font-family: "lato";
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 35px;
+    letter-spacing: 0.5px;
+    
+}

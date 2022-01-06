@@ -1,0 +1,17 @@
+@media (max-width: 768px) {
+    #get-started {
+        padding: 80px 0;
+    }
+    .get-started h2 {
+        font-size: 42px;
+
+    }
+    .get-started p {
+        width: auto;
+        font-size: 16px;
+        padding: 18px 0;
+    }
+    .get-started button {
+        font-size: 16px;
+    }
+}
