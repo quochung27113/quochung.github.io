@@ -1,0 +1,106 @@
+
+@media (max-width: 1399px) {
+    #topbuying .topbuying-gallery {
+        justify-content: space-evenly;
+    }
+    #topbuying .topbuying-gallery .topbuying-picture3{
+        margin-top: 40px;
+    }
+
+}
+@media (max-width: 992px) {
+    #header .header-navbar {
+        margin-bottom: 30px;
+    }
+    #topbuying .topbuying-gallery p {
+        padding-top: 110px;
+    }
+    .header-carimage img {
+        max-width: 1000px;
+    }
+    #topbuying .topbuying-gallery .topbuying-picture2{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 767px) {
+    #header {
+        padding-bottom: 140px;
+    }
+    #header h2{
+        font-size: 40px;
+    }
+    #header p{
+        font-size: 16px;
+        max-width: 500px;
+    }
+    #header form button {
+        margin-top: 20px;
+    }
+    #header .header-carimage {
+        top: 82.8%;
+    }
+    .header-carimage img {
+        max-width: 500px;
+    }
+    #hottests .hottests-gallery {
+        justify-content: center;
+    }
+    #topbuying .topbuying-gallery {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #topbuying .topbuying-gallery .topbuying-picture2 {
+        padding: 0;
+        margin: 25px 0;
+    }
+    #topbuying .topbuying-gallery .topbuying-picture3{
+        margin-top: 0px;
+    }
+    #footer-form {
+        padding-bottom: 30px;
+    }
+    #footer-form h2 {
+        padding-top: 30px;
+        font-size: 35px;
+    }
+    #footer-form p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 576px) {
+    .header-carimage img {
+        max-width: 350px;
+    }
+    #header p{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    #header {
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 472px) {
+
+    a.logo-items2 {
+        margin: 0 22px 0 0;
+    }
+    #header {
+        padding-top: 25px;
+    }
+    #header h2 {
+        font-size: 30px;
+    }
+    #header form {
+        align-items: flex-end
+    }
+    #footer-form h2 {
+        font-size: 27px;
+    }
+    .footer-items {
+        padding: 0 12px;
+    }
+    .footer-items .container {
+        padding: 25px 0;
+    }
+
+}
