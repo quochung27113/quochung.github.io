@@ -1,0 +1,16 @@
+@import url("./base.css");
+@import url("./responsive/responsive.css");
+/* @import url(./homepage.css); */
+/* @import url("./component.css"); */
+/* @import url("./responsive.css"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700;800&family=Overpass:wght@400;500;600;700&family=Philosopher:wght@400;700&display=swap');
+
+@font-face {
+  font-family:font_quentin;
+  src:url('../font/Quentin.ttf') format('truetype'),
+  url('../fonts/Captureit.eot#iefix') format('embedded-opentype'),
+  url('../fonts/Captureit.woff') format('woff');
+  font-weight:normal;
+  font-style:normal;
+ }
