@@ -10,7 +10,12 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start; 
+    } 
+    .header-items a {
+        margin-bottom: 30px;
+        margin-left: 20px !important;
     }
+
     .header-items img {
         position: relative;
         transform: translate(0, 0);

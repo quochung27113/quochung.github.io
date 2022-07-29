@@ -8,7 +8,7 @@
   <title>Bigscream Chocolate</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/homepage.css">
-  
+
 </head>
 
 <body>
@@ -28,8 +28,8 @@
           </a>
           <div class="top-menu-item2">
             <button><img src="./assets/img/icon/small-icon/search.svg" alt="location-icon"></button>
-            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm"
-                    aria-label="product" aria-describedby="button-addon2">
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="product"
+              aria-describedby="button-addon2">
           </div>
         </div>
         <div class="top-menu-items">
@@ -37,20 +37,95 @@
             <img src="./assets/img/icon/small-icon/user.svg" alt="location-icon">
             <p>Tài khoản</p>
           </a>
-          <a href="" class="top-menu-item2">
+          <a class="top-menu-item2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
             <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
             <p>Giỏ hàng</p>
           </a>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <span>Giỏ hàng</span>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+             <div>
+              <div style="overflow-x:hidden">
+                <div class="cart-product-wrap">
+                  <div class="d-flex">
+                    <img src="./assets/img/product/golden/golden-1.jpg" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Golden Chocolate Giftbox</p>
+                        <p>2 x 1.500.000đ</p>
+                        <p>Số miếng: <span>36 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-end">
+                        <p>Tổng:</p>
+                        <p class="product-price">3.000.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>2</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+                <div class="cart-product-wrap">
+                  <div class="d-flex">
+                    <img src="./assets/img/product/product1.png" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Dark Chocolate Giftbox</p>
+                        <p>1 x 1.000.000đ</p>
+                        <p>Số miếng: <span>24 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-end">
+                        <p>Tổng:</p>
+                        <p class="product-price">1.000.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>1</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <div class="offcanvas-footer">
+              <div class="d-flex justify-content-between align-items-center">
+                <p>3 sản phẩm</p>
+                <p>Tổng: <span class="product-price">4.000.000đ</span></p>
+              </div>
+              <div class="action-btn">
+                <a href="./cart.html"><button class="go-to-cart">Giỏ hàng</button></a>
+                <a href="./payment.html"><button class="go-to-pay">Thanh toán</button></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-xl navbar-light bg-light p-0"  >
+    <nav class="navbar navbar-expand-xl navbar-light bg-light p-0">
       <div class="container-fluid" style="
       background-color: var(--true-chocolate-text-color);">
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
@@ -84,8 +159,8 @@
           aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
           aria-label="Slide 2"></button>
-        <button class="btn btn-1 hover-filled-slide-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-          aria-label="Slide 3"></button>
+        <button class="btn btn-1 hover-filled-slide-right" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -129,7 +204,15 @@
   <!-- header end -->
   <div class="container" id="company-word">
     <span class="company-name">~ BIGSCREAM CHOCOLATES ~</span>
-    <span class="company-word-span">Đem đến những kỷ niệm ngọt ngào</span>
+    <span class="company-word-span reveal">
+      <span>Đem </span>
+      <span>đến </span>
+      <span>những </span>
+      <span>kỷ </span>
+      <span>niệm </span>
+      <span>ngọt </span>
+      <span>ngào </span>
+    </span>
     <span class="quentin-word">Choco</span>
   </div>
 
@@ -152,46 +235,46 @@
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/blue/blue.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Patisserie Dessert Truffles</span>
+            <span class="product-price">1.250.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/violet/violet.png" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Dream Chocolate Giftbox</span>
+            <span class="product-price">800.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/black/black.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Signature Truffles</span>
+            <span class="product-price">2.250.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/golden/golden-1.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Golden Chocolate Giftbox</span>
+            <span class="product-price">1.500.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/flowers/flowers.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Flowers Assorted Chocolate</span>
+            <span class="product-price">500.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
@@ -206,50 +289,58 @@
     <div class="center container">
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/trending/thontorn pink/thorntonpink.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Thornton Classic</span>
+            <span class="product-price">500.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/trending/continental-dark/dark-continental.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Dark Continental Chocolates</span>
+            <span class="product-price">300.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/trending/pearl-blue/pearl-blue.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Thorntons Pearls Caramel</span>
+            <span class="product-price">150.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/trending/pearl-pink/pearl-pink.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Thorntons Pearls Hazelnuts</span>
+            <span class="product-price">200.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
       <div>
         <a href="">
-          <img src="./assets/img/product/product1.png" alt="">
+          <img src="./assets/img/product/trending/bottle/bottle.jpg" alt="">
           <div class="product">
-            <span class="product-name">Dark Chocolate Giftbox</span>
-            <span class="product-price">1.000.000<span class="price-unit"> vnd</span></span>
+            <span class="product-name">Milk Celebration Bottle</span>
+            <span class="product-price">200.000<span class="price-unit"> vnd</span></span>
           </div>
         </a>
       </div>
-
+      <div>
+        <a href="">
+          <img src="./assets/img/product/trending/booktower/booktower.jpg" alt="">
+          <div class="product">
+            <span class="product-name">Book Tower Chocolate</span>
+            <span class="product-price">500.000<span class="price-unit"> vnd</span></span>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 
@@ -262,31 +353,31 @@
       <div class="row">
         <div class="col-md-6 col-sm-6" style="padding:0">
           <div class="feature-item-left">
-            <a href="" class="d-flex flex-column align-items-center " style="padding-bottom: 35px">
+            <a href="" class="d-flex flex-column align-items-center ">
               <img class="collection-image" src="./assets/img/product/product-show-1.png" alt="">
               <span class="company-name">RƯỢU SỮA CHOCOLATE</span>
               <div class="position-relative text-center" style="max-width:350px">
                 <p class="collection-para">Sự kết hợp ngọt ngào giữa rượu cao cấp và chocolate</p>
-                <span class="quentin-word">Liquor</span>
+                <p class="quentin-word">Liquor</p>
               </div>
             </a>
           </div>
-          
+
         </div>
         <div class="col-md-6 col-sm-6" style="padding:0">
-          <div  class="feature-item-right">
+          <div class="feature-item-right">
             <a href="" class="d-flex flex-column align-items-center"
-            style="background-color:var(--verylight-pinky-background-color);padding-bottom: 35px">
-            <img class="collection-image" src="./assets/img/product/product-show-2.png" alt="">
-            <span class="company-name">CHOCOLATE NHÂN RƯỢU</span>
-            <div class="position-relative text-center" style="max-width:350px">
-              <p class="collection-para">Nồng say với hương vị nhân rượu tuyệt hảo</p>
-              <span class="quentin-word" style="color:var(--sweet-blue-background-color)">Choco</span>
-            </div>
-          </a>
+              style="background-color:var(--verylight-pinky-background-color)">
+              <img class="collection-image" src="./assets/img/product/product-show-2.png" alt="">
+              <span class="company-name">CHOCOLATE NHÂN RƯỢU</span>
+              <div class="position-relative text-center" style="max-width:350px">
+                <p class="collection-para">Nồng say với hương vị nhân rượu tuyệt hảo</p>
+                <p class="quentin-word" style="color:var(--sweet-blue-background-color)">Choco</p>
+              </div>
+            </a>
           </div>
         </div>
-       </div>
+      </div>
       <!-- mint -->
       <div id="collection-mint-product" class="row">
         <img class="mint-image col-lg-6 col-md-5 col-sm-12" src="./assets/img/product/product-show-3.png" alt="">
@@ -377,9 +468,9 @@
   </section>
 
   <section id="about-us">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
-        <div class="col-lg-5 col-md-7 about-us-left-wrap">
+        <div class="col-lg-6 col-md-12 about-us-left-wrap">
           <div>
             <div class="best-seller">
               <div class=" headerline-para"></div>
@@ -393,7 +484,7 @@
           </div>
 
         </div>
-        <div class="col-lg-7 col-md-5 ">
+        <div class="col-lg-6 col-md-12 ">
           <div>
             <img src="./assets/img/image/factory.png" alt="">
           </div>
@@ -404,7 +495,7 @@
   <!-- video -->
   <!-- video -->
   <section id="product-video">
-    <div class="container-fluid">
+    <div class="container">
       <div>
         <div class="feature-container">
           <div class=" headerline-para"></div>
@@ -539,7 +630,7 @@
   </section>
 
 
-  
+
   <!-- <nav class="navbar navbar-expand-lg navbar-light" style="
   background-color: var(--true-chocolate-text-color);">
     <div class="container-fluid justify-content-center">
@@ -561,11 +652,12 @@
       
     </div>
   </nav> -->
- 
-  
-  
+
+
+
 
   <!-- file Javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="./lib/slick-1.8.1/slick/slick.min.js"></script>;
