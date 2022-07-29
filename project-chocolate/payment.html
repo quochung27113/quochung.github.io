@@ -18,138 +18,140 @@
           <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
         </button>
       </div>
-      <header id="header">
-        <div class="container-fluid" id="header-commer">
-          <div class="header-commer">
-            <p>Miễn phí vận chuyển đơn hàng 200.000 đ trở lên <a href=""><span>Mua ngay ></span></a></p>
+     <!-- header start -->
+  <header id="header">
+    <div class="container-fluid" id="header-commer">
+      <div class="header-commer">
+        <p>Miễn phí vận chuyển đơn hàng 200.000 đ trở lên <a href=""><span>Mua ngay ></span></a></p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="top-menu">
+        <div class="top-menu-items">
+          <a href="" class="top-menu-item1">
+            <img src="./assets/img/icon/small-icon/location.svg" alt="location-icon">
+            <p>Cửa hàng</p>
+          </a>
+          <div class="top-menu-item2">
+            <button><img src="./assets/img/icon/small-icon/search.svg" alt="location-icon"></button>
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="product"
+              aria-describedby="button-addon2">
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="top-menu">
-            <div class="top-menu-items">
-              <a href="" class="top-menu-item1">
-                <img src="./assets/img/icon/small-icon/location.svg" alt="location-icon">
-                <p>Cửa hàng</p>
-              </a>
-              <div class="top-menu-item2">
-                <button><img src="./assets/img/icon/small-icon/search.svg" alt="location-icon"></button>
-                <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="product"
-                  aria-describedby="button-addon2">
-              </div>
+        <div class="top-menu-items">
+          <a href="" class="top-menu-item1">
+            <img src="./assets/img/icon/small-icon/user.svg" alt="location-icon">
+            <p>Tài khoản</p>
+          </a>
+          <a class="top-menu-item2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
+            <p>Giỏ hàng</p>
+          </a>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <span>Giỏ hàng</span>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="top-menu-items">
-              <a href="" class="top-menu-item1">
-                <img src="./assets/img/icon/small-icon/user.svg" alt="location-icon">
-                <p>Tài khoản</p>
-              </a>
-              <a class="top-menu-item2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
-                <p>Giỏ hàng</p>
-              </a>
-    
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                <div class="offcanvas-header">
-                  <span>Giỏ hàng</span>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-    
-                <div class="offcanvas-body">
-                 <div>
-                  <div style="overflow-x:hidden">
-                    <div class="cart-product-wrap">
-                      <div class="d-flex">
-                        <img src="./assets/img/product/golden/golden-1.jpg" alt="">
-                        <div>
-                          <div>
-                            <p class="product-name">Golden Chocolate Giftbox</p>
-                            <p>2 x 1.500.000đ</p>
-                            <p>Số miếng: <span>36 miếng</span></p>
-                            <p>Ruy bằng: <span>Vàng trơn</span></p>
-                          </div>
-                          <div class="d-flex justify-content-between align-items-end">
-                            <p>Tổng:</p>
-                            <p class="product-price">3.000.000đ</p>
-                          </div>
-                        </div>
+
+            <div class="offcanvas-body">
+             <div>
+              <div style="overflow-x:hidden">
+                <div class="cart-product-wrap">
+                  <div class="cart-product">
+                    <img src="./assets/img/product/golden/golden-1.jpg" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Golden Chocolate Giftbox</p>
+                        <p>Mã: GDV1001</p>
+                        <p>Số miếng: <span>36 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                        <p>2 x 1.500.000đ</p>
                       </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="quantity-select">
-                          <button class="button-left"><i class="bi bi-dash-lg"></i></button>
-                          <div class="d-flex justify-content-center align-items-center"><span>2</span></div>
-                          <button class="button-right"><i class="bi bi-plus-lg"></i></button>
-                        </div>
-                        <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
-                      </div>
-                    </div>
-                    <div class="cart-product-wrap">
-                      <div class="d-flex">
-                        <img src="./assets/img/product/product1.png" alt="">
-                        <div>
-                          <div>
-                            <p class="product-name">Dark Chocolate Giftbox</p>
-                            <p>1 x 1.000.000đ</p>
-                            <p>Số miếng: <span>24 miếng</span></p>
-                            <p>Ruy bằng: <span>Vàng trơn</span></p>
-                          </div>
-                          <div class="d-flex justify-content-between align-items-end">
-                            <p>Tổng:</p>
-                            <p class="product-price">1.000.000đ</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="quantity-select">
-                          <button class="button-left"><i class="bi bi-dash-lg"></i></button>
-                          <div class="d-flex justify-content-center align-items-center"><span>1</span></div>
-                          <button class="button-right"><i class="bi bi-plus-lg"></i></button>
-                        </div>
-                        <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                      <div class="total-price-wrap">
+                        <p>Tổng:</p>
+                        <p class="product-price">3.000.000đ</p>
                       </div>
                     </div>
                   </div>
-                 </div>
-                </div>
-                <div class="offcanvas-footer">
                   <div class="d-flex justify-content-between align-items-center">
-                    <p>3 sản phẩm</p>
-                    <p>Tổng: <span class="product-price">4.000.000đ</span></p>
-                  </div>
-                  <div class="action-btn">
-                    <a href="./cart.html"><button class="go-to-cart">Giỏ hàng</button></a>
-                    <a href="./payment.html"><button class="go-to-pay">Thanh toán</button></a>
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>2</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
                   </div>
                 </div>
+                <div class="cart-product-wrap">
+                  <div class="cart-product">
+                    <img src="./assets/img/product/violet/violet.png" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Dream Chocolate Giftbox</p>
+                        <p>Mã: GDV1004</p>
+                        <p>Số miếng: <span>12 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                        <p>1 x 800.000đ</p>
+                      </div>
+                      <div class="total-price-wrap">
+                        <p>Tổng:</p>
+                        <p class="product-price">800.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>1</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+              </div>
+             </div>
+            </div>
+            <div class="offcanvas-footer">
+              <div class="d-flex justify-content-between align-items-center">
+                <p>3 sản phẩm</p>
+                <p>Tổng: <span class="product-price">3.800.000đ</span></p>
+              </div>
+              <div class="action-btn">
+                <a href="./cart.html"><button class="go-to-cart">Giỏ hàng</button></a>
+                <a href="./payment.html"><button class="go-to-pay">Thanh toán</button></a>
               </div>
             </div>
           </div>
         </div>
-        <nav class="navbar navbar-expand-xl navbar-dark p-0">
-          <div class="container-fluid" style="
-          background-color: var(--true-chocolate-text-color);">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="header-items">
-                  <img src="./assets/img/image/Logo.svg" alt="">
-                  <a class="menu-active" href="./index.html">Trang chủ</a>
-                  <a href="./about.html">VỀ BIGSCREAM</a>
-                  <a href="./category.html">SẢN PHẨM</a>
-                  <a href="">QUÀ TẶNG & DỊP</a>
-                  <a href="./contact.html">Liên hệ</a>
-                </div>
-              </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-dark p-0">
+      <div class="container-fluid" style="
+      background-color: var(--true-chocolate-text-color);">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="header-items">
+              <img src="./assets/img/image/Logo.svg" alt="">
+              <a class="menu-active" href="./index.html">Trang chủ</a>
+              <a href="./about.html">VỀ BIGSCREAM</a>
+              <a href="./category.html">SẢN PHẨM</a>
+              <a href="">QUÀ TẶNG & DỊP</a>
+              <a href="./contact.html">Liên hệ</a>
             </div>
           </div>
-        </nav>
-        <!-- slider end -->
-      </header>
-      <!-- slider end -->
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header end -->
     <div class="container">
         <nav class="breadcrumb-container" aria-label="breadcrumb">
             <ol class="breadcrumb">
@@ -439,7 +441,7 @@
                         <div class="d-flex">
                             <p class="box-title">Đơn hàng của bạn</p>
                             <div class="shipment-count"> 
-                                <span>1</span>
+                                <span>3</span>
                             </div>
                         </div>
                         <div class="payment-info-box">
@@ -450,19 +452,35 @@
                                         <img src="./assets/img/product/golden/golden-1.jpg" alt="">
                                         <div>
                                             <p>Mã: GDV1001</p>
-                                            <p>Số miếng: 20 cái</p>
-                                            <p>Ruy băng: vàng </p>
+                                            <p>Số miếng: 36 cái</p>
+                                            <p>Ruy băng: Vàng trơn</p>
+                                            <p>2 x 1.500.000đ</p>
                                         </div>
                                     </div>
                                 </div>
                                 <p>3.000.000 đ</p>
                             </div>
+                            <div class="product-info-wrap info-box">
+                              <div>
+                                  <p class="product-title">Dream Chocolate Giftbox</p>
+                                  <div class="d-flex">
+                                      <img src="./assets/img/product/violet/violet.png" alt="">
+                                      <div>
+                                          <p>Mã: GDV1004</p>
+                                          <p>Số miếng: 12 cái</p>
+                                          <p>Ruy băng: Vàng trơn </p>
+                                          <p>1 x 800.000đ</p>
+                                      </div>
+                                  </div>
+                              </div>
+                              <p>800.000 đ</p>
+                          </div>
                             <div class="info-box d-flex justify-content-between">
-                                <p>Tạm tính (1 sản phẩm)</p>
-                                <p>3.000.000 đ</p>
+                                <p>Tạm tính (3 sản phẩm)</p>
+                                <p>3.800.000 đ</p>
                             </div>
                             <div class="info-box">
-                                <div class="d-flex justify-content-between">
+                                <div class="d-flex justify-content-between" style="margin-bottom: 20px;">
                                     <p>Mã khuyến mại</p>
                                     <p>-80.000đ</p>
                                 </div>
@@ -474,14 +492,33 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex justify-content-between align-items-center" style="margin-bottom: 20px">
                                 <p class="total-title">Tổng tính: </p>
                                 <p class="total-price">
-                                    2.920.000 đ
+                                    3.720.000 đ
                                 </p>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <a href="./payment.html" ><button class="go-buy-btn">thanh toán</button></a>
+                                <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="go-buy-btn">thanh toán</button>
+                                 <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                  <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body">
+                                        <i class="bi bi-check-circle-fill"></i>
+                                        <p class="success-para">Thanh toán thành công</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <a href="./index.html"><button type="button" class="go-homepage-btn">Về trang chủ</button></a>
+                                        <a href="/images/myw3schoolsimage.jpg" download><button type="button" class="success-download-btn" >Tải biên lai</button></a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>

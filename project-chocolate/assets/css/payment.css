@@ -142,6 +142,11 @@ line-height: 27px;
     background: white;
     border-color: var(--dark-chocolate-text-color);
 }
+.payment-method-wrap .payment-method-box .other-card-btn:hover {
+    border-color: 1px solid var(--lightbright-chocolate-text-color);
+    color: var(--lightbright-chocolate-text-color);
+    transition: 0.5s ease;
+}
 /* .radio-select-wrap {
     display: flex;
     align-items: center;
@@ -165,6 +170,7 @@ line-height: 27px;
 /* WRAP RIGHT */
 .wrap-right .product-title {
     font-weight: 700;
+    margin-bottom: 14px;
 }
 .wrap-right .product-info-wrap {
     display: flex;
@@ -196,6 +202,7 @@ line-height: 27px;
 
 .wrap-right .info-box {
     border-bottom: 1px solid #C2C1C1;
+    padding-bottom: 20px;
     margin-bottom: 20px;
 }
 
@@ -216,6 +223,7 @@ line-height: 27px;
     line-height: 58px;
     color: var(--golden-chocolate-text-color);
 }
+
 .payment-info-box .go-buy-btn {
     text-transform:uppercase;
     background: var(--lightbright-chocolate-text-color);
@@ -231,6 +239,39 @@ line-height: 27px;
     background-color: white;
     color: var(--lightbright-chocolate-text-color);
     transition: 0.5s ease;
+}
+/* model */
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-body .bi {
+    font-size: 60px;
+    color: var(--success-color);
+}
+.modal-body .success-para {
+    text-transform: uppercase;
+    color:var(--success-color);
+    font-weight: 900;
+    margin-top: 24px;
+}
+.modal-footer {
+    justify-content: space-evenly;
+}
+.modal-footer .go-homepage-btn {
+    border: 1px solid var(--lightbright-chocolate-text-color);
+    background: none;
+    color: var(--lightbright-chocolate-text-color);
+    width: 170px;
+    height:40px;
+}
+.modal-footer .success-download-btn {
+    border:none;
+    background: var(--lightbright-chocolate-text-color);
+    color: white;
+    width: 170px;
+    height:40px;
 }
 /* back to cart */
 .back-to-category {

@@ -311,9 +311,10 @@ body::-webkit-scrollbar-thumb:hover {
       background-color: var(--lightbright-chocolate-text-color) !important;
 }
 /* topmenu offcanvas */
-.top-menu .offcanvas {
-    transition: 0.8s ease-in-out;
-}
+
+/* .top-menu .offcanvas {
+    transition: 0.8s ease-in;
+} */
 
 .top-menu .offcanvas-end {
     width: 450px !important;
@@ -705,6 +706,7 @@ body::-webkit-scrollbar-thumb:hover {
 .slick-next {
     right: -30px;
 }
+/* gadget right */
 #gadget {
     display: flex;
     flex-direction: column;
@@ -730,6 +732,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 #gadget button:hover {
-    transform: translateX(-20px);
+    transform: translateX(-15px);
     transition: 0.3s ease-in; 
 }
