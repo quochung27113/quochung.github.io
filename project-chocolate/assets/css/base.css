@@ -705,3 +705,31 @@ body::-webkit-scrollbar-thumb:hover {
 .slick-next {
     right: -30px;
 }
+#gadget {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10%;
+    right:0;
+    z-index: 1000;
+}
+#gadget a {
+    transition: 0.5s ease;
+}
+#gadget button {
+    width: 40px;
+    height: 40px;
+    border:none;
+    background-color: var(--sweet-pinky-background-color);
+    color: var(--dark-chocolate-text-color);
+    margin-top: 8px;
+}
+#gadget .bi {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+#gadget button:hover {
+    transform: translateX(-20px);
+    transition: 0.3s ease-in; 
+}

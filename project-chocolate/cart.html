@@ -9,62 +9,146 @@
   <link rel="stylesheet" href="./assets/css/cart.css">
 </head>
 <body>
-    <header id="header">
-        <div class="container-fluid" id="header-commer">
-          <div class="header-commer">
-            <p>Miễn phí vận chuyển đơn hàng 200.000 đ trở lên <a href=""><span>Mua ngay ></span></a></p>
+  <div id="gadget">
+    <a href="#header"><button><i class="bi bi-chevron-up"></i></button></a>
+    <button><i class="bi bi-messenger"></i></button>
+    <button class="top-menu-item2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+      <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
+    </button>
+  </div>
+  <header id="header">
+    <div class="container-fluid" id="header-commer">
+      <div class="header-commer">
+        <p>Miễn phí vận chuyển đơn hàng 200.000 đ trở lên <a href=""><span>Mua ngay ></span></a></p>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="top-menu">
+        <div class="top-menu-items">
+          <a href="" class="top-menu-item1">
+            <img src="./assets/img/icon/small-icon/location.svg" alt="location-icon">
+            <p>Cửa hàng</p>
+          </a>
+          <div class="top-menu-item2">
+            <button><img src="./assets/img/icon/small-icon/search.svg" alt="location-icon"></button>
+            <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="product"
+              aria-describedby="button-addon2">
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="top-menu">
-            <div class="top-menu-items">
-              <a href="" class="top-menu-item1">
-                <img src="./assets/img/icon/small-icon/location.svg" alt="location-icon">
-                <p>Cửa hàng</p>
-              </a>
-              <div class="top-menu-item2">
-                <button><img src="./assets/img/icon/small-icon/search.svg" alt="location-icon"></button>
-                <input type="text" class="form-control" placeholder="Tìm kiếm sản phẩm" aria-label="product"
-                  aria-describedby="button-addon2">
-              </div>
+        <div class="top-menu-items">
+          <a href="" class="top-menu-item1">
+            <img src="./assets/img/icon/small-icon/user.svg" alt="location-icon">
+            <p>Tài khoản</p>
+          </a>
+          <a class="top-menu-item2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
+            <p>Giỏ hàng</p>
+          </a>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <span>Giỏ hàng</span>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="top-menu-items">
-              <a href="" class="top-menu-item1">
-                <img src="./assets/img/icon/small-icon/user.svg" alt="location-icon">
-                <p>Tài khoản</p>
-              </a>
-              <a href="" class="top-menu-item2">
-                <img src="./assets/img/icon/small-icon/cart.svg" alt="location-icon">
-                <p>Giỏ hàng</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <nav class="navbar navbar-expand-xl navbar-light bg-light p-0">
-          <div class="container-fluid" style="
-          background-color: var(--true-chocolate-text-color);">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-              aria-controls="offcanvasNavbar">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                <div class="header-items">
-                  <img src="./assets/img/image/Logo.svg" alt="">
-                  <a class="menu-active" href="./index.html">Trang chủ</a>
-                  <a href="./about.html">VỀ BIGSCREAM</a>
-                  <a href="./category.html">SẢN PHẨM</a>
-                  <a href="">QUÀ TẶNG & DỊP</a>
-                  <a href="./contact.html">Liên hệ</a>
+
+            <div class="offcanvas-body">
+             <div>
+              <div style="overflow-x:hidden">
+                <div class="cart-product-wrap">
+                  <div class="d-flex">
+                    <img src="./assets/img/product/golden/golden-1.jpg" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Golden Chocolate Giftbox</p>
+                        <p>2 x 1.500.000đ</p>
+                        <p>Số miếng: <span>36 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-end">
+                        <p>Tổng:</p>
+                        <p class="product-price">3.000.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>2</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                  </div>
+                </div>
+                <div class="cart-product-wrap">
+                  <div class="d-flex">
+                    <img src="./assets/img/product/product1.png" alt="">
+                    <div>
+                      <div>
+                        <p class="product-name">Dark Chocolate Giftbox</p>
+                        <p>1 x 1.000.000đ</p>
+                        <p>Số miếng: <span>24 miếng</span></p>
+                        <p>Ruy bằng: <span>Vàng trơn</span></p>
+                      </div>
+                      <div class="d-flex justify-content-between align-items-end">
+                        <p>Tổng:</p>
+                        <p class="product-price">1.000.000đ</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="quantity-select">
+                      <button class="button-left"><i class="bi bi-dash-lg"></i></button>
+                      <div class="d-flex justify-content-center align-items-center"><span>1</span></div>
+                      <button class="button-right"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                    <button class="trash-icon"><i class="fa fa-trash-o product-remove" aria-hidden="true"></i></button>
+                  </div>
                 </div>
               </div>
+             </div>
+            </div>
+            <div class="offcanvas-footer">
+              <div class="d-flex justify-content-between align-items-center">
+                <p>3 sản phẩm</p>
+                <p>Tổng: <span class="product-price">4.000.000đ</span></p>
+              </div>
+              <div class="action-btn">
+                <a href="./cart.html"><button class="go-to-cart">Giỏ hàng</button></a>
+                <a href="./payment.html"><button class="go-to-pay">Thanh toán</button></a>
+              </div>
             </div>
           </div>
-        </nav>
-      </header>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-xl navbar-dark p-0">
+      <div class="container-fluid" style="
+      background-color: var(--true-chocolate-text-color);">
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="header-items">
+              <img src="./assets/img/image/Logo.svg" alt="">
+              <a class="menu-active" href="./index.html">Trang chủ</a>
+              <a href="./about.html">VỀ BIGSCREAM</a>
+              <a href="./category.html">SẢN PHẨM</a>
+              <a href="">QUÀ TẶNG & DỊP</a>
+              <a href="./contact.html">Liên hệ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- slider end -->
+  </header>
+  <!-- slider end -->
+  
     <div class="container">
         <nav class="breadcrumb-container" aria-label="breadcrumb">
           <ol class="breadcrumb">

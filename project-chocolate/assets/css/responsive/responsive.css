@@ -52,5 +52,7 @@
     }
 }
 @media screen and (max-width: 576px) {
-
+    #collection-continental-product .continental-product p {
+        max-width: 350px !important;
+    }
 }
