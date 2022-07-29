@@ -803,8 +803,8 @@ a:hover .fa-thumbs-down {
 }
 /* MAYBE YOU ALSO LIKE */
 #best-seller {
-    padding-top: 88px;
-    padding-bottom: 70px;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
 .headerline-para {
@@ -883,7 +883,11 @@ a:hover .fa-thumbs-down {
     right: 0;
 } */
 /* RESPONSIVE */
-@media screen and (max-width: 1230px) {   
+@media screen and (max-width: 1230px) { 
+    #best-seller {
+        padding-top:0px;
+        padding-bottom: 40px;
+    }  
 }
 
 @media screen and (max-width: 1199px) {  
@@ -906,5 +910,12 @@ a:hover .fa-thumbs-down {
    }
 }
 @media screen and (max-width: 768px) {
-    
+    #product-detail {
+        margin: 0 12px 40px 12px;
+    }
+}
+@media screen and (max-width: 576px) {
+    #payment {
+        margin: 12px;
+    }
 }
