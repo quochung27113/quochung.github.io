@@ -541,6 +541,7 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 52px;
 }
 
+
 #footer .company-name {
     color: var(--golden-chocolate-text-color);
     font-weight: 600;

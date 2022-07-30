@@ -55,4 +55,13 @@
     #collection-continental-product .continental-product p {
         max-width: 350px !important;
     }
+    #footer .form-control {
+        margin-bottom: 40px;
+    }
+    #footer .input-group .btn {
+        position: absolute;
+        right: 50%;
+        bottom: -12%;
+        transform: translateX(50%);
+    }
 }
