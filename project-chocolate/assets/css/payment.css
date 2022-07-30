@@ -292,4 +292,14 @@ line-height: 27px;
     #payment {
         margin: 12px;
     }
+    .customer-info-box {
+        padding: 20px !important;
+    }
+    .shipment-info-box {
+        padding: 20px !important;
+    }
+    .payment-method-box {
+        padding: 20px !important;
+    }
+
 }
