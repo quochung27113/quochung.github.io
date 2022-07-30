@@ -767,8 +767,55 @@
         max-width: 100%;;
     }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     .slick-dots {
         display: none;
+    }
+    .slick-next {
+        display: none !important;
+    }
+    .carousel-caption button{
+        padding: 6px 20px;
+        font-size: 16px;
+    }
+    .product-btn {
+        max-width: fit-content;
+    }
+    .program-image {
+        padding-bottom: 300px;
+        margin-left: 88px;
+    }
+    #program-course p {
+        max-width: 268px;
+    }
+   
+    #about-us .about-us-item .product-btn {
+        height: 48px;
+    padding: 6px 20px;
+    }
+    #program-course .program-details .product-btn {
+        height: 48px;
+    padding: 6px 20px;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    .carousel-caption {
+        top: 0%;
+    }
+    .carousel-caption p {
+        margin: 5px auto;
+    }
+} 
+@media screen and (max-width: 375px) {
+    .program-image {
+        padding-bottom: 270px;
+        margin-left: 80px;
+    }
+    #program-course p {
+        max-width: 268px;
+    }
+    .program-details {
+        padding-right:0;
     }
 }
