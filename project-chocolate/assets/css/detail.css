@@ -913,6 +913,9 @@ a:hover .fa-thumbs-down {
     #product-detail {
         margin: 0 12px 40px 12px;
     }
+    #product-decript .btn {
+        height: 65px;
+    }
 }
 @media screen and (max-width: 576px) {
     #payment {
