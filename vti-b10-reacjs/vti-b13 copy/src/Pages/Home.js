@@ -1,20 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import FormApp from './Components/Form'
-import TableApp from './Components/TableApp'
-import {Component} from 'react';
-import Search from "./Components/Search"
+import FormApp from '../Components/Form'
+import TableApp from '../Components/TableApp'
+import Search from "../Components/Search"
 import randomstring from 'randomstring'
-import { Route, Switch } from 'react-router-dom';
-import About from "./Pages/About";
-import Contact from "./Pages/Contact"
-import Home from './Pages/Home'
-
-class App extends Component {
+export default class Home extends Component {
   constructor(){
     super();
     this.state= {
@@ -22,7 +13,6 @@ class App extends Component {
       itemSelected: {},
     }
   }
-
   componentDidMount() {
     if (!localStorage.getItem('data')) {
       localStorage.setItem(
@@ -98,31 +88,16 @@ class App extends Component {
     }
 
   }
-
   render() {
     const {dataApp, itemSelected} = this.state;
-    
     return (
-      <div className="App">
-        {/* <Container>
+      <Container>
               <FormApp submitForm={this.submitForm} itemSelected={itemSelected}></FormApp>
               <Search search={this.search}/>
               <div className="mt-5">
                   <TableApp dataApp={dataApp} handleEdit={this.handleEdit}></TableApp>
               </div>
-          </Container> */}
-          <a href='/about'>AAbout</a>
-          <a href='/contact'>CContact</a>
-          <Switch>
-          <Route exact path='/' component={Home} />
-          <Route path='/about' component={About} />
-          <Route path='/contact' component={Contact} />
-
-          </Switch>
-          
-      </div>
-    );
+          </Container>
+    )
   }
 }
-
-export default App;
